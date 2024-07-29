@@ -39,11 +39,11 @@ We work in a competing risk set-up. The competing states are: Healthy, Diagnosed
 | 1             | PID	          |	Person ID                                                                          |
 | 2	            | KQN	          |	Sex                                                                                |
 | 3	            | fdato	        |	Date of birth                                                                      |
-| 4	            | bornDK	      |	Indicates if person is born in DK                                                  |
-| 5	            | start_date	  |	Date of entry in study                                                             |
-| 6	            | end_date	    |	Date of exit of study                                                              |
+| 4	            | bornDK	       |	Indicates if person is born in DK                                                  |
+| 5	            | start_date	   |	Date of entry in study                                                             |
+| 6	            | end_date	     |	Date of exit of study                                                              |
 | 7	            | censor_stat	  |	Censoring status at end of study (1: Healthy, 2: Diagnosed, 3: Emigrated, 4: Dead) |
-| 8	            | Tstart	      |	Age at entry of study                                                              |
+| 8	            | Tstart	       |	Age at entry of study                                                              |
 | 9	            | Tslut	        |	Age at exit of study                                                               |
 
 ### Scenarios
@@ -65,7 +65,7 @@ Data for this study os property of Statistic Denmark and the Danish Health Data 
 
 ## Math
 
-Lets define $A$ as the maximum age of the participants. In this paper we have set $A=95$. Further let $Ã$ denote the median age of onset. 
+Lets define $A$ as the maximum age of the participants. In this paper we have set $A=8$. Further let $Ã$ denote the median age of onset. 
 we wish to compute the mean age of onset for cause $i$ in a competing risk set-up. 
 Note that the cumulative incidence function (CIF), in a competing risk set-up, is defined as the Aalen-Johansen estimator:
 $$F_i (t) = \int^t_0 S(u) \alpha_i (u) du,$$
