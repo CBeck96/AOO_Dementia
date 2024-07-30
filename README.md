@@ -5,13 +5,14 @@ This is a github repository for the code used for the analysis conducted in the 
 
 Below is the R-functions created to make the analysis for the paper. 
 
-| R-function            | Calculates                                   |
-| --------------------- | -------------------------------------------- |
-| `CIF()`               | The cumulative incidence function            |
-| `median_age()`        | The median age from the CIF                  |
-| `quantile_age()`      | The quantile age from the CIF                |
-| `mean_age()`          | The mean age from the CIF                    |
-| `mean_age_of_onset()` | Combines the functions above to one function |
+| R-function            | Calculates                                               |
+| --------------------- | -------------------------------------------------------- |
+| `CIF()`               | The cumulative incidence function                        |
+| `median_age()`        | The median age from the CIF                              |
+| `quantile_age()`      | The quantile age from the CIF                            |
+| `mean_age()`          | The mean age from the CIF                                |
+| `mean_age_of_onset()` | Combines the functions above to one function             |
+| `pseudo_theta()`      | Used to compute AOO in creating the pseudo-observations  |
 
 ### Libraries used
 
@@ -23,12 +24,11 @@ Below is the R-functions created to make the analysis for the paper.
 | foreach       | Run the code quicker                            |
 | ggplot2       | Creating plots                                  |
 | gridExtra     | Creating panel plots                            |
+| mgcv          |                                                 |
+| splines       |                                                 |
+| dplyr         |                                                 |
 
 At each of the R-scripts, the packages used in a function is listed. 
-
-## Analysis
-
-In the file `MAOO.R` the above functions are run on the data. 
 
 ## Description of input data 
 
@@ -54,8 +54,18 @@ The study looks at individuals who are alive and healthy in Denmark who turns 75
 Scenario B: 
 The study looks at individuals who are alive and healthy in Denmark who turns 75 years old between 01/01/1994 and 31/12/2021. The study ends at the end of 2021, or when the indivuals turn 95 years old, or when entering an exiting state, whatever comes first. In scenario B not all individuals can be in the study until there 95'th birthday. 
 
-## Simulations
 
+## Analysis
+
+In the file `MAOO.R` the above functions are run on the data. 
+
+File with computations of pseudo observations
+
+Computing linear model with splines
+
+This is done similar in both scenarios, therefore the code is fairly similar abd there will only be one example of the code. 
+
+## Simulations
 
 
 
