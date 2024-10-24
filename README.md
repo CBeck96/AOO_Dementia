@@ -29,9 +29,10 @@ Below is the R-functions created to make the analysis for the paper.
 | foreach       | Run the code quicker                            |
 | ggplot2       | Creating plots                                  |
 | gridExtra     | Creating panel plots                            |
-| mgcv          |                                                 |
-| splines       |                                                 |
-| dplyr         |                                                 |
+| ggExtra       | Adding marginal histogram                       |
+| mgcv          | Computing GAM                                   |
+| splines       | Creating splines                                |
+| dplyr         | Data manipulation                               |
 
 At each of the R-scripts, the packages used in a function is listed. 
 
@@ -39,30 +40,30 @@ At each of the R-scripts, the packages used in a function is listed.
 
 We work in a competing risk set-up. The competing states are: Healthy, Diagnosed with dimentia (F00-F09), and Death & Emigration. Where the two last states are exiting states.
  
-| Column number | Column name   | Description                                                                        |
-| ------------- | ------------- | ---------------------------------------------------------------------------------- |
-| 1             | PID	          |	Person ID                                                                          |
-| 2	            | KQN	          |	Sex                                                                                |
-| 3	            | fdato	        |	Date of birth                                                                      |
-| 4	            | bornDK	       |	Indicates if person is born in DK                                                  |
-| 5	            | start_date	   |	Date of entry in study                                                             |
-| 6	            | end_date	     |	Date of exit of study                                                              |
-| 7	            | censor_stat	  |	Censoring status at end of study (1: Healthy, 2: Diagnosed, 3: Emigrated, 4: Dead) |
-| 8	            | Tstart	       |	Age at entry of study                                                              |
-| 9	            | Tslut	        |	Age at exit of study                                                               |
+| Column number | Column name   | Description                                                                          |
+| ------------- | ------------- | ------------------------------------------------------------------------------------ |
+| 1             | PID	          |	Person ID                                                                            |
+| 2	            | KQN	          |	Sex                                                                                  |
+| 3	            | fdato	        |	Date of birth                                                                        |
+| 5	            | start_date	   |	Date of entry in study                                                               |
+| 6	            | end_date	     |	Date of exit of study                                                                |
+| 7	            | censor_stat	  |	Censoring status at end of study (1: Healthy, 2: Diagnosed, 3: Death and emigration) |
+| 8	            | Tstart	       |	Age at entry of study                                                                |
+| 9	            | Tslut	        |	Age at exit of study                                                                 |
+
+
 
 ### Scenarios
 
-Scenario A: 
+Complete follow-up: 
 The study looks at individuals who are alive and healthy in Denmark who turns 75 years old between 01/01/1994 and 31/12/2001. The study ends at the end of 2021, or when the indivuals turn 95 years old, or when entering an exiting state, whatever comes first. In this scenario we will possible have full follow-up of the individuals.
 
-Scenario B: 
-The study looks at individuals who are alive and healthy in Denmark who turns 75 years old between 01/01/1994 and 31/12/2021. The study ends at the end of 2021, or when the indivuals turn 95 years old, or when entering an exiting state, whatever comes first. In scenario B not all individuals can be in the study until there 95'th birthday. 
+Total cohort: 
+The study looks at individuals who are alive and healthy in Denmark who turns 75 years old between 01/01/1994 and 31/12/2021. The study ends at the end of 2021, or when the indivuals turn 95 years old, or when entering an exiting state, whatever comes first. In this scenario not all individuals can be in the study until there 95'th birthday. 
 
 
 ## Analysis
 
-In the file `MAOO.R` the above functions are run on the data. 
 
 File with computations of pseudo observations
 
@@ -72,7 +73,27 @@ This is done similar in both scenarios, therefore the code is fairly similar abd
 
 ## Simulations
 
+General information about the concept of the simulations.
 
+### Aim for simulation:
+We wish to compare methods for estimating the mean age of onset (MAOO) in competing risk survival analysis. We wish to validate our method.
+
+### Size of simulation:
+
+Number of observations and number of replications.
+
+### Metrics for methods
+
+- Average of means
+- Average of se(means)
+- Absolute bias
+- Relative bias
+- Relative root mean squared error
+- MSE/RMSE
+- Quantiles
+- Coverage probability
+
+(Monte Carlo SE of estimates)
 
 ### Availability of data and materials
 
