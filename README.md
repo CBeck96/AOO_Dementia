@@ -53,7 +53,7 @@ We work in a competing risk set-up. The competing states are: Healthy, Diagnosed
 
 
 
-### Scenarios
+## Scenarios
 
 Complete follow-up: 
 The study looks at individuals who are alive and healthy in Denmark who turns 75 years old between 01/01/1994 and 31/12/2001. The study ends at the end of 2021, or when the indivuals turn 95 years old, or when entering an exiting state, whatever comes first. In this scenario we will possible have full follow-up of the individuals.
