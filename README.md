@@ -53,6 +53,28 @@ We work in a competing risk set-up. The competing states are: Healthy, Diagnosed
 
 
 
+
+
+
+Data with pseudo observations
+
+| Column number | Column name   | Description                                                                          |
+| ------------- | ------------- | ------------------------------------------------------------------------------------ |
+| 1             | PID	          |	Person ID                                                                            |
+| 2	            | KQN	          |	Sex                                                                                  |
+| 3	            | fdato	        |	Date of birth                                                                        |
+| 5	            | start_date	   |	Date of entry in study                                                               |
+| 6	            | end_date	     |	Date of exit of study                                                                |
+| 7	            | censor_stat	  |	Censoring status at end of study (1: Healthy, 2: Diagnosed, 3: Death and emigration) |
+| 8	            | Tstart	       |	Age at entry of study                                                                |
+| 9	            | Tslut	        |	Age at exit of study                                                                 |
+| 10	           | theta	        |	Pseudo-observation                                                                   |
+| 11	           | coefYear2001  |	                                                                                     |
+
+
+
+
+
 ## Scenarios
 
 Complete follow-up: 
