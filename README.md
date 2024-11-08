@@ -50,17 +50,17 @@ The study looks at individuals who are alive and healthy in Denmark who turns 75
 
 The data structure is similar for the two scenarios. The code described is generalized, since the analysis is similar for the two scenarios. In practise the code is run for each of the scenarios. 
 
-### Cleaned data
+### Data
 
 | Column number | Column name   | Description                                                                          |
 | ------------- | ------------- | ------------------------------------------------------------------------------------ |
 | 1             | PID	          |	Person ID                                                                            |
 | 2	            | KQN	          |	Sex                                                                                  |
 | 3	            | fdato	        |	Date of birth                                                                        |
-| 5	            | start_date	   |	Date of entry in study                                                               |
-| 6	            | end_date	     |	Date of exit of study                                                                |
+| 5	            | start_date	  |	Date of entry in study                                                               |
+| 6	            | end_date	    |	Date of exit of study                                                                |
 | 7	            | censor_stat	  |	Censoring status at end of study (1: Healthy, 2: Diagnosed, 3: Death and emigration) |
-| 8	            | Tstart	       |	Age at entry of study                                                                |
+| 8	            | Tstart	      |	Age at entry of study                                                                |
 | 9	            | Tslut	        |	Age at exit of study                                                                 |
 
 In the code it will be calles "dat".
@@ -72,14 +72,18 @@ In the code it will be calles "dat".
 | 1             | PID	          |	Person ID                                                                            |
 | 2	            | KQN	          |	Sex                                                                                  |
 | 3	            | fdato	        |	Date of birth                                                                        |
-| 5	            | start_date	   |	Date of entry in study                                                               |
-| 6	            | end_date	     |	Date of exit of study                                                                |
+| 5	            | start_date	  |	Date of entry in study                                                               |
+| 6	            | end_date	    |	Date of exit of study                                                                |
 | 7	            | censor_stat	  |	Censoring status at end of study (1: Healthy, 2: Diagnosed, 3: Death and emigration) |
-| 8	            | Tstart	       |	Age at entry of study                                                                |
+| 8	            | Tstart	      |	Age at entry of study                                                                |
 | 9	            | Tslut	        |	Age at exit of study                                                                 |
-| 10	           | theta	        |	Pseudo-observation                                                                   |
-| 11	           | coefYear2001  |	                                                                                     |
+| 10	          | theta	        |	Pseudo-observation                                                                   |
+| 11	          | coefYear2001  |	                                                                                     |
 
+
+### Availability of data and materials
+
+Data for this study os property of Statistic Denmark and the Danish Health Data Authority. The data are available from the authorities, but restrictions apply.
 
 ## Analysis
 
@@ -89,10 +93,6 @@ File with computations of pseudo observations
 Computing linear model with splines
 
 This is done similar in both scenarios, therefore the code is fairly similar and therefore will only be one example of the code. 
-
-### Availability of data and materials
-
-Data for this study os property of Statistic Denmark and the Danish Health Data Authority. The data are available from the authorities, but restrictions apply.
 
 ## Math
 
