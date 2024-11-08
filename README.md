@@ -4,7 +4,7 @@ UNDER WORK!!!
 
 
 # Age of onset with Dementia as an example (AOO_Dementia)
-This is a github repository for the code used for the analysis conducted in the paper: "A New Method for Calculating the Mean Age of Onset in the Presence of Competing Risks and Censoring: Usiing Dementia as an Example" published in YYYYYY. [Paper]()
+This is a github repository for the code used for the analysis conducted in the paper: "A New Method for Calculating the Mean Age of Onset in the Presence of Competing Risks and Censoring: Using Dementia as an Example" published in YYYYYY. [Paper]()
 
 ## Functions
 
@@ -80,6 +80,7 @@ In the code it will be calles "dat".
 | 10	          | theta	        |	Pseudo-observation                                                                   |
 | 11	          | coefYear2001  |	                                                                                     |
 
+In the code it will be calles "dat_pse".
 
 ### Availability of data and materials
 
@@ -89,6 +90,8 @@ Data for this study os property of Statistic Denmark and the Danish Health Data 
 
 
 File with computations of pseudo observations
+
+Risk regression models
 
 Computing linear model with splines
 
@@ -116,6 +119,9 @@ It can be seen as a restricted mean age of onset.
 ## Simulations
 
 General information about the concept of the simulations.
+
+Add gameplan for the simulations!!!!!
+
 
 ### Aim for simulation:
 We wish to compare methods for estimating the mean age of onset (MAOO) in competing risk survival analysis. We wish to validate our method.
