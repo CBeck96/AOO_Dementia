@@ -115,6 +115,9 @@ It can be seen as a restricted mean age of onset.
 ![image](https://github.com/CBeck96/AOO2023/assets/43062260/9e70d6d5-71ee-4d21-9239-aec82975b0e5)
 ![image](https://github.com/CBeck96/AOO2023/assets/43062260/b60396c4-0586-4026-8e54-aeee9a9e2cef)
 
+Be aware that in the paper, that the function $G$ is defined as:
+$$ G(t) = \frac{F(t)}{F(A)} . $$
+Using the function $G$ this way make it look more like a cummulative incedence, instead of a survival curve. 
 
 ## Simulations
 
