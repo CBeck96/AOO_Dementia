@@ -115,7 +115,7 @@ It can be seen as a restricted mean age of onset.
 ![image](https://github.com/CBeck96/AOO2023/assets/43062260/9e70d6d5-71ee-4d21-9239-aec82975b0e5)
 ![image](https://github.com/CBeck96/AOO2023/assets/43062260/b60396c4-0586-4026-8e54-aeee9a9e2cef)
 
-Be aware that in the paper, that the function $G$ is defined as:
+Note that in the paper, that the function $G$ is defined as:
 $$ G(t) = \frac{F(t)}{F(A)} . $$
 Using the function $G$ this way make it look more like a cummulative incedence, instead of a survival curve. 
 
@@ -127,11 +127,17 @@ Add gameplan for the simulations!!!!!
 
 
 ### Aim for simulation:
-We wish to compare methods for estimating the mean age of onset (MAOO) in competing risk survival analysis. We wish to validate our method.
+We wish to compare methods for estimating the mean age of onset (MAOO)(and Std. dev.) in competing risk survival analysis. Another thing we wish to replicate are the slopes in the regressions.  We wish to validate our method. 
 
 ### Size of simulation:
 
 Number of observations and number of replications.
+
+### Methods 
+
+-	Case-only
+-	Pseudo-observations based on the Aalen-Johansen estimator
+-	Our method (Area under the curve) using the Aalen-Johansen estimator
 
 ### Metrics for methods
 
