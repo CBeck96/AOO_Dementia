@@ -4,7 +4,7 @@ UNDER WORK!!!
 
 
 # Age of onset with Dementia as an example (AOO_Dementia)
-This is a github repository for the code used for the analysis conducted in the paper: "A New Method for Calculating the Mean Age of Onset in the Presence of Competing Risks and Censoring: Using Dementia as an Example" published in YYYYYY. [Paper]()
+This is a github repository for the code used for the analysis conducted in the paper: "An Approach for Calculating the Mean Age of Onset in the Presence of Competing Risks and Censoring: An Example of Dementia" published in YYYYYY. [Paper]()
 
 ## Functions
 
