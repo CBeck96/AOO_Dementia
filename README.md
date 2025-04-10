@@ -42,10 +42,10 @@ We work in a competing risk set-up. The competing states are: Healthy, Diagnosed
 
 ### Scenarios
 
-Complete follow-up: 
+**Complete follow-up**: 
 The study looks at individuals who are alive and healthy in Denmark who turns 75 years old between 01/01/1994 and 31/12/2001. The study ends at the end of 2021, or when the indivuals turn 95 years old, or when entering an exiting state, whatever comes first. In this scenario we will possible have full follow-up of the individuals.
 
-Total cohort: 
+**Total cohort**: 
 The study looks at individuals who are alive and healthy in Denmark who turns 75 years old between 01/01/1994 and 31/12/2021. The study ends at the end of 2021, or when the indivuals turn 95 years old, or when entering an exiting state, whatever comes first. In this scenario not all individuals can be in the study until there 95'th birthday. 
 
 The data structure is similar for the two scenarios. The code described is generalized, since the analysis is similar for the two scenarios. In practise the code is run for each of the scenarios. 
@@ -86,17 +86,6 @@ In the code it will be calles "dat_pse".
 
 Data for this study os property of Statistic Denmark and the Danish Health Data Authority. The data are available from the authorities, but restrictions apply.
 
-## Analysis
-
-
-File with computations of pseudo observations
-
-Risk regression models
-
-Computing linear model with splines
-
-This is done similar in both scenarios, therefore the code is fairly similar and therefore will only be one example of the code. 
-
 ## Math
 
 Lets define $A$ as the maximum age of the participants. In this paper we have set $A=8$. Further let $Ã$ denote the median age of onset. 
@@ -125,7 +114,6 @@ General information about the concept of the simulations.
 
 Add gameplan for the simulations!!!!!
 
-
 ### Aim for simulation:
 We wish to compare methods for estimating the mean age of onset (MAOO)(and Std. dev.) in competing risk survival analysis. Another thing we wish to replicate are the slopes in the regressions.  We wish to validate our method. 
 
@@ -141,13 +129,4 @@ Number of observations and number of replications.
 
 ### Metrics for methods
 
-- Average of means
-- Average of se(means)
-- Absolute bias
-- Relative bias
-- Relative root mean squared error
-- MSE/RMSE
-- Quantiles
-- Coverage probability
 
-(Monte Carlo SE of estimates)
