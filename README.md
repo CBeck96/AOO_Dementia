@@ -63,7 +63,7 @@ The data structure is similar for the two scenarios. The code described is gener
 | 8	            | Tstart	      |	Age at entry of study                                                                |
 | 9	            | Tslut	        |	Age at exit of study                                                                 |
 
-In the code it will be calles "dat".
+In the code it will be called "dat".
 
 ### Data with pseudo observations 
 
@@ -80,7 +80,7 @@ In the code it will be calles "dat".
 | 10	          | theta	        |	Pseudo-observation                                                                   |
 | 11	          | coefYear2001  |	                                                                                     |
 
-In the code it will be calles "dat_pse".
+In the code it will be called "dat_pse".
 
 ### Availability of data and materials
 
