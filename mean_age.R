@@ -20,3 +20,4 @@
 mean_age <- function(x,y){
   return(trapz(x,y))
 }
+

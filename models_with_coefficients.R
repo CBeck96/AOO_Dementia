@@ -10,12 +10,7 @@
 # riskRegression
 
 
-
-
-
 dat_theta_res
-
-
 
 dat_dem_coef <- dat_dem[,c(1,2,3,5,7,8,9)]
 
